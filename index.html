@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра</title>
+    <style>
+        body { margin: 0; background: #87CEEB; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; font-family: sans-serif; overflow: hidden; }
+        #btn { width: 200px; height: 200px; background: orange; border-radius: 50%; border: 10px solid white; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 50px; user-select: none; }
+        #btn:active { transform: scale(0.95); }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 60px; margin-bottom: 20px;">СЧЕТ: <span id="score">0</span></h1>
+    <div id="btn" onclick="document.getElementById('score').innerText++">🐈</div>
+</body>
+</html>
